@@ -9,45 +9,51 @@
     padding: 0;
     box-sizing: border-box;
   }
-
-  body {
+  html, body {
+    height: 100%;
+    overflow: hidden;
     background-color: #000000;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
   }
-
-  .section {
+  .container {
     height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
+    padding: 40px 0;
   }
-
+  .spacer-top {
+    flex: 1;
+  }
   .main-text {
     color: #ffffff;
-    font-size: 3rem;
-    letter-spacing: 2px;
+    font-size: 2.8rem;
+    letter-spacing: 3px;
     line-height: 1.8;
+    text-transform: uppercase;
   }
-
+  .spacer-mid {
+    flex: 1;
+  }
   .hidden-text {
     color: #000000;
     background-color: #000000;
-    font-size: 2rem;
-    letter-spacing: 1px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
   }
 </style>
 </head>
 <body>
-
-  <div class="section">
-    <div class="main-text">Gracias<br><br>Por participar</div>
+  <div class="container">
+    <div class="spacer-top"></div>
+    <div class="main-text">Gracias 🐝<br><br>Por participar</div>
+    <div class="spacer-mid"></div>
+    <div class="hidden-text">Nos veremos pronto</div>
   </div>
-
-  <div class="section">
-    <div class="hidden-text">Nos veremos pronto 🐇</div>
-  </div>
-
 </body>
 </html>
